@@ -1,0 +1,47 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <PreferenceCategory app:title="@string/title_authentication">
+        <EditTextPreference
+            android:key="username"
+            android:persistent="true"
+            android:title="@string/title_username"
+            app:key="username"
+            app:title="@string/username"
+            app:useSimpleSummaryProvider="true"
+            android:defaultValue="admin" />
+        <EditTextPreference
+            android:key="password"
+            android:persistent="true"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="@string/title_password"
+            android:inputType="textPassword"
+            android:defaultValue="admin" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/title_network">
+
+        <EditTextPreference
+            android:clickable="false"
+            android:enabled="false"
+            android:defaultValue="Default value"
+            android:key="ssid"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="@string/title_ssid" />
+        <EditTextPreference
+            android:clickable="false"
+            android:enabled="false"
+            android:defaultValue="Default value"
+            android:key="ip_address"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="@string/title_ip_address" />
+    </PreferenceCategory>
+    <PreferenceCategory app:title="@string/title_servers">
+        <ListPreference
+            android:key="server"
+            android:persistent="true"
+            android:title="@string/title_server"
+            android:defaultValue="localhost" />
+    </PreferenceCategory>
+</PreferenceScreen>

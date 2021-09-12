@@ -1,0 +1,9 @@
+<resources>
+    <dimen name="app_bar_height">180dp</dimen>
+    <dimen name="text_margin">16dp</dimen>
+    <dimen name="remote_layout_margin">2dp</dimen>
+    <dimen name="remote_padding">2dp</dimen>
+    <dimen name="remote_button_size">48dp</dimen>
+    <dimen name="remote_button_scale_x">1</dimen>
+    <dimen name="remote_button_scale_y">1</dimen>
+</resources>
